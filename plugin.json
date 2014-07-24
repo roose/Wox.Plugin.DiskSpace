@@ -1,0 +1,12 @@
+{
+    "ID":"9FCC63F6896144EC8188DEC03FA12C82",
+    "ActionKeyword":"space",
+    "Name":"Wox.Plugin.DiskSpace",
+    "Description":"Display of available hard drive disk space",
+    "Author":"roose",
+    "Version":"1.0",
+    "Language":"python",
+    "Website":"http://www.getwox.com",
+    "IcoPath":"Images\\hdd.ico",
+    "ExecuteFileName":"main.py"
+}
