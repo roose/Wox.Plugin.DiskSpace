@@ -6,7 +6,7 @@
     "Author":"roose",
     "Version":"1.0",
     "Language":"python",
-    "Website":"http://www.getwox.com",
+    "Website":"https://github.com/roose/Wox.Plugin.DiskSpace",
     "IcoPath":"Images\\hdd.ico",
     "ExecuteFileName":"main.py"
 }
