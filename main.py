@@ -24,10 +24,16 @@ class space(Wox):
 
     def get_drives(self):
         kernel32 = ctypes.windll.kernel32
-        GetVolumeInformationW = kernel32.GetVolumeInformationW
-        GetDiskFreeSpaceExW = kernel32.GetDiskFreeSpaceExA
         bitmask = kernel32.GetLogicalDrives()
-        GetDriveType = kernel32.GetDriveTypeA
+        GetVolumeInformationW = kernel32.GetVolumeInformationW
+
+        if sys.version_info[0] == 2:
+            GetDiskFreeSpaceExW = kernel32.GetDiskFreeSpaceExA
+            GetDriveType = kernel32.GetDriveTypeA
+        else:
+            GetDiskFreeSpaceExW = kernel32.GetDiskFreeSpaceExW
+            GetDriveType = kernel32.GetDriveTypeW
+
 
         def volume_name(path):
             volumeNameBuffer = ctypes.create_unicode_buffer(1024)

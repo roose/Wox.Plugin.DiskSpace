@@ -4,7 +4,7 @@
     "Name":"Wox.Plugin.DiskSpace",
     "Description":"Display of available hard drive disk space",
     "Author":"roose",
-    "Version":"1.0",
+    "Version":"1.0.1",
     "Language":"python",
     "Website":"https://github.com/roose/Wox.Plugin.DiskSpace",
     "IcoPath":"Images\\hdd.ico",
